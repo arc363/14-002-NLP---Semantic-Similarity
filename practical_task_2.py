@@ -27,14 +27,18 @@ with open(file_path, 'r') as file:
         else:
             print(f"Invalid row: {row}")
 
-# Variable containing the film description to be compared with each
+# Variable containing the user-input film description to be compared with each
 # film description in films_dict
-query_description = "Will he save their world or destroy it? When the Hulk \
+query_description = input("Enter your favourite film's description, or a list of keywords: ")
+
+
+"""
+# Example film description: "Will he save their world or destroy it? When the Hulk \
                     becomes too dangerous for the Earth, the Illuminati trick \
                     Hulk into a shuttle and launch him into space to a planet \
                     where the Hulk can live in peace. Unfortunately, Hulk \
                     lands on the planet Sakaar where he is sold into slavery \
-                    and trained as a gladiator."
+                    and trained as a gladiator." """
 
 print("\n------ Query <> Film descriptions similarity scores ------\n")
 
